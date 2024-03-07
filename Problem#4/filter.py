@@ -1,13 +1,18 @@
+"""
+Sean Killian
+Thursday @ 2pm
+"""
 def process_and_print(input_string):
-      # Split into separate strings
-
+    # Split into separate strings
+    numbers_strings = input_string.split()
     # Convert strings to integers and filter out negative values
-    input_data = 
+    input_data = [int(num_str) for num_str in numbers_strings if int(num_str) < 0]
 
     # Sort integers in reverse order
-  
+    input_data.sort(reverse=True)
     # Print sorted integers
-    
+    for num in input_data:
+        print(num, end=" ")
     
 
 if __name__ == "__main__":

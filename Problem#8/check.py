@@ -1,6 +1,16 @@
+"""
+Sean Killian
+Thursday @ 2pm
+"""
+
 def in_order(nums):
     # Type your code here.
     
+    for i in range(1, len(nums)):
+        if nums[i] < nums[i - 1]:
+            return False
+    return True
+
 if __name__ == '__main__':
     # Test out-of-order example
     nums1 = [5, 6, 7, 8, 3]
